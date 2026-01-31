@@ -8,4 +8,22 @@ document.addEventListener("alpine:init", () => {
       { id: 5, name: "Primo Passo", img: "25.jpg", price: 90000 },
     ],
   }));
+
+  Alpine.store("cart", {
+    items: [],
+    total: 0,
+    quntity: 0,
+    add(newItem) {
+      console.log(newItem);
+    },
+  });
 });
+
+// konversi ke rupiah
+const rupiah = (number) => {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+  }).format(number);
+};
