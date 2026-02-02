@@ -17,7 +17,7 @@ document.querySelector("#search-button").onclick = (e) => {
 
 // Toggle class active untuk shoppinfg cart
 const shoppingCart = document.querySelector(".shopping-cart");
-document.querySelector("#shopping-cart-button").onclick = () => {
+document.querySelector("#shopping-cart-button").onclick = (e) => {
   shoppingCart.classList.toggle("active");
   e.preventDefault();
 };

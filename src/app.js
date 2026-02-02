@@ -12,7 +12,7 @@ document.addEventListener("alpine:init", () => {
   Alpine.store("cart", {
     items: [],
     total: 0,
-    quntity: 0,
+    quantity: 0,
     add(newItem) {
       // cek apakah ada barang yang sama di cart
 
